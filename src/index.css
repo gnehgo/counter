@@ -38,7 +38,8 @@ h2.text{
     height: 10px;
 }
 h2.value{
-     margin-bottom: 30px;
+     font-size: 250%;
+     margin-bottom: 50px;
      margin-left: 110px;
      width: 10px;
      height: 10px;
