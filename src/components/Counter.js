@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../index.css"
 function Counter() {
     const [count,setCount] = React.useState(0);
     const onClickPlus= () =>{
@@ -10,12 +10,12 @@ function Counter() {
         setCount(count-1);
     }
     return (
-        <div ClassName={Counter}>
+        <div className ={Counter}>
             <div>
-                <h2>Счетсчик:</h2>
-                <h1>{count}</h1>
-                <button onClick={onCliclMinus} className="minus">- Minus</button>
-                <button onClick={onClickPlus} className="Plus">Plus +</button>
+                <h2 className="text">Счет</h2>
+                <h2 className="value">{count}</h2>
+                <button onClick={onCliclMinus} className="minus"><h2>- минус</h2></button>
+                <button onClick={onClickPlus} className="plus"><h2>плюс +</h2></button>
             </div>
 
         </div>
