@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import "./game.css"
 import Board from "./Board";
-import Square from "./Square";
 import Winner from "../Winner";
 
 
@@ -19,8 +18,15 @@ const Game = () => {
         setXIsNext(!xIsNext)
     }
 
+    const startNewGame = () =>{
+        return(
+            <button className="start_btn" onClick={() => setBoard(Array(9).fill(null))}>Очистить поле</button>
+        )
+    }
+
     return (
         <div className="wrapper">
+            {startNewGame()}
         <Board squares = {board} click={checkClick}/>
         </div>
     );
