@@ -3,11 +3,9 @@ import "./game.css"
 
 
 
-function Square() {
+const Square = (props) => {
     return (
-        <div className="square">
-
-        </div>
+        <button className="square" onClick={props.onClick}>{props.value}</button>
     );
 }
 

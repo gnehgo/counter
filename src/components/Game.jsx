@@ -6,7 +6,7 @@ import Winner from "../Winner";
 
 
 
-function Game() {
+const Game = () => {
     const [board,setBoard] = useState(Array(9).fill(null))
     const [xIsNext, setXIsNext] = useState(true)
     const winner = Winner(board)
