@@ -28,6 +28,9 @@ const Game = () => {
         <div className="wrapper">
             {startNewGame()}
         <Board squares = {board} click={checkClick}/>
+            <p className='info'>
+                {winner ? 'Победитель ' + winner : "Сейчас ходит " + (xIsNext ? 'X' : 'O')}
+            </p>
         </div>
     );
 }
