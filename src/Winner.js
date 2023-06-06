@@ -17,3 +17,4 @@ export function Winner(squares){
     }
     return null
 }
+export default Winner;
