@@ -17,7 +17,6 @@ function Counter() {
                 <button onClick={onCliclMinus} className="minus"><h2>- минус</h2></button>
                 <button onClick={onClickPlus} className="plus"><h2>плюс +</h2></button>
             </div>
-
         </div>
     )
 }

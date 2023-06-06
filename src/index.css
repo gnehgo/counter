@@ -1,8 +1,5 @@
 body {
     background: rgba(123, 100, 203, 0.71);
-    border: black;
-    border-width: 1px;
-    border-style: solid;
     display: flex;
     justify-content: center;
 
