@@ -1,14 +1,13 @@
 import React from "react";
 import Counter from "./components/Counter";
-import "./index.css"
+import Game from "./components/Game";
+import "./App.css"
 
 
 
 function App() {
         return (
-            <div>
-
-            </div>
+            <Game/>
         );
     }
 
