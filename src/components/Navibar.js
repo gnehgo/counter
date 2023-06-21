@@ -1,5 +1,5 @@
 import React from 'react';
-import {Nav, Navbar, Button} from "react-bootstrap";
+import {Nav, Navbar} from "react-bootstrap";
 import {NavLink,} from "react-router-dom";
 
  function Navibar(){
@@ -21,10 +21,6 @@ import {NavLink,} from "react-router-dom";
                             <p1>About </p1>
                         </NavLink>
                     </Nav.Link>
-                </Nav>
-                <Nav>
-                    <Button className="me-2 primary">Log in</Button>
-                    <Button ClassName="primary ">Sign in</Button>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
