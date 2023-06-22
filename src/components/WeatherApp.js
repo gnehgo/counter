@@ -14,7 +14,10 @@ class WeatherApp extends React.Component {
         country: undefined,
         sunrise: undefined,
         sunset: undefined,
-        error: undefined
+        error: undefined,
+        sky: undefined,
+        wind_speed: undefined,
+        pressure: undefined
     }
     gettingWeather = async (e)=>{
         e.preventDefault();
@@ -34,7 +37,10 @@ class WeatherApp extends React.Component {
                 city:data.name,
                 country:data.sys.country,
                 sunrise:sunrise_date,
-                error:undefined
+                error:undefined,
+                sky: data.weather.main,
+                wind_speed: data.wind.speed,
+                pressure: data.main.pressure
             })
         } else{
             this.setState({
@@ -44,7 +50,10 @@ class WeatherApp extends React.Component {
                 country: undefined,
                 sunrise: undefined,
                 sunset: undefined,
-                error: "Введите название города"
+                error: "Введите название города",
+                sky: undefined,
+                wind_speed: undefined,
+                pressure: undefined
             });
         }
     }
@@ -59,7 +68,11 @@ class WeatherApp extends React.Component {
                     country={this.state.country}
                     sunrise={this.state.sunrise}
                     error={this.state.error}
-                />
+                    sky={this.state.sky}
+                    wind_speed={this.state.wind_speed}
+                    pressure={this.state.pressure}
+                    />
+
 
             </>
         );

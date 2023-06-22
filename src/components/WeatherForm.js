@@ -1,4 +1,5 @@
 import React from "react";
+import {Navbar} from "react-bootstrap";
 
 
 class WeatherForm extends React.Component{
@@ -8,7 +9,7 @@ class WeatherForm extends React.Component{
                 <input type="text" name="city" placeholder="Город"/>
                 <button>Получить погоду</button>
             </form>
-        );
+    );
     }
 
 }
