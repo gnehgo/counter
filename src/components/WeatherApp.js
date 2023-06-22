@@ -1,6 +1,7 @@
 import React from "react";
 import WeatherForm from "./WeatherForm";
 import Weather from "./Weather";
+import "./weatherStyle.css"
 
 
 const API_KEY="7c3eea84bff9dcdc629bc8aa262ed790";
@@ -38,7 +39,7 @@ class WeatherApp extends React.Component {
                 country:data.sys.country,
                 sunrise:sunrise_date,
                 error:undefined,
-                sky: data.weather.main,
+                sky:data.weather.description,
                 wind_speed: data.wind.speed,
                 pressure: data.main.pressure
             })
@@ -59,22 +60,31 @@ class WeatherApp extends React.Component {
     }
     render() {
         return (
-            <>
-                <WeatherForm weatherMethod={this.gettingWeather} />
-                <Weather
-                    temp={this.state.temp}
-                    feels_like={this.state.feels_like}
-                    city={this.state.city}
-                    country={this.state.country}
-                    sunrise={this.state.sunrise}
-                    error={this.state.error}
-                    sky={this.state.sky}
-                    wind_speed={this.state.wind_speed}
-                    pressure={this.state.pressure}
-                    />
-
-
-            </>
+            <div className="wrapper">
+                <div className="main">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-sm-5">
+                            <p className="info">Узнайте погоду в вашем городе</p>
+                        </div>
+                        <div className="col-sm-7 form">
+                            <WeatherForm weatherMethod={this.gettingWeather} />
+                            <Weather
+                                temp={this.state.temp}
+                                feels_like={this.state.feels_like}
+                                city={this.state.city}
+                                country={this.state.country}
+                                sunrise={this.state.sunrise}
+                                error={this.state.error}
+                                sky={this.state.sky}
+                                wind_speed={this.state.wind_speed}
+                                pressure={this.state.pressure}
+                            />
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         );
     }
 }
