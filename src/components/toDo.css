@@ -8,7 +8,10 @@ body{
 .taskWrapper{
     display: flex;
     width: 200px;
+    text-align: center;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto
 }
 .taskTittle{
     margin-left: 10px;
