@@ -1,0 +1,40 @@
+.header {
+    padding: 40px 0;
+    min-height: 625px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #090909;
+    background-image: url('./../../img/header-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    text-align: center;
+}
+.header_title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.header_title strong {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.header_title em {
+    font-style: normal;
+    color: rgba(0, 23, 210, 0.9);
+}
+
+.header__text {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.333;
+}
+.cvLink{
+    text-decoration: none;
+    color: rgba(0, 24, 246, 0.9);
+}
+
