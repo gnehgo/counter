@@ -3,13 +3,12 @@ import {Nav, Navbar} from "react-bootstrap";
 import {NavLink} from "react-router-dom";
 
  function Navibar(){
-
         return(
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar  bg="black" variant="dark">
             <Navbar.Brand>Portfolio CV</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="me-auto">
+                <Nav className="me-lg-5">
                     <Nav.Link>
                         <NavLink className="NavLink" to="/">
                             <p1>Home</p1>
@@ -17,8 +16,8 @@ import {NavLink} from "react-router-dom";
                         <NavLink className="NavLink" to="/projects">
                             <p1>Projects </p1>
                         </NavLink>
-                        <NavLink className="NavLink" to="/about">
-                            <p1>About </p1>
+                        <NavLink className="NavLink" to="/contact">
+                            <p1>Contact </p1>
                         </NavLink>
                     </Nav.Link>
                 </Nav>

@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 .NavLink{
     text-decoration: none;
     color: white;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .active{
-    margin-right: 5px;
     color: #b9b8b8;
     cursor: default;
 }
