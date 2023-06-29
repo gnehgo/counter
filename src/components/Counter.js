@@ -1,5 +1,5 @@
 import React from "react";
-import "../index.css"
+import styles from "../counter.module.css"
 function Counter() {
     const [count,setCount] = React.useState(0);
     const onClickPlus= () =>{
@@ -10,12 +10,12 @@ function Counter() {
         setCount(count-1);
     }
     return (
-        <div className ={Counter}>
+        <div className ={styles.body}>
             <div>
-                <h2 className="text">Счет</h2>
-                <h2 className="value">{count}</h2>
-                <button onClick={onCliclMinus} className="minus"><h2>- минус</h2></button>
-                <button onClick={onClickPlus} className="plus"><h2>плюс +</h2></button>
+                <h2 className={styles.text}>Счет</h2>
+                <h2 className={styles.value}>{count}</h2>
+                     <button onClick={onCliclMinus} className={styles.minus}><h2>-</h2></button>
+                    <button onClick={onClickPlus} className={styles.plus}><h2>+</h2></button>
             </div>
         </div>
     )
