@@ -1,0 +1,14 @@
+.body{
+    background-color: #090909;
+}
+.cards{
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+.Link{
+    text-decoration: none;
+    color:white;
+}
+

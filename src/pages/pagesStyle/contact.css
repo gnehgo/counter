@@ -1,0 +1,21 @@
+
+.title-1 {
+    margin-bottom: 35px;
+    margin-top: 40px;
+    font-size: 80px;
+    font-weight: 800;
+    color: #000dff;
+    text-align: center;
+}
+.title-2 {
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: 3000;
+}
+.contactInfo{
+    text-decoration: none;
+    color: #0033ff;
+    font-size: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
