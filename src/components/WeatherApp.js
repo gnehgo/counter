@@ -45,16 +45,7 @@ class WeatherApp extends React.Component {
             })
         } else{
             this.setState({
-                temp: undefined,
-                feels_like: undefined,
-                city: undefined,
-                country: undefined,
-                sunrise: undefined,
-                sunset: undefined,
                 error: "Введите название города",
-                sky: undefined,
-                wind_speed: undefined,
-                pressure: undefined
             });
         }
     }
