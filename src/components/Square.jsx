@@ -1,11 +1,11 @@
 import React from "react";
-import "./game.css"
+import style from "./game.module.css"
 
 
 
 const Square = (props) => {
     return (
-        <button className="square" onClick={props.onClick}>{props.value}</button>
+            <button className={style.button} onClick={props.onClick}>{props.value}</button>
     );
 }
 

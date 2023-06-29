@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import "./game.css"
+import style from "./game.module.css"
 import Board from "./Board";
-import Winner from "../Winner";
+import Winner from "../helperz/Winner";
 
 
 
@@ -20,15 +20,15 @@ const Game = () => {
 
     const startNewGame = () =>{
         return(
-            <button className="start_btn" onClick={() => setBoard(Array(9).fill(null))}>Очистить поле</button>
+            <button className={style.start_btn} onClick={() => setBoard(Array(9).fill(null))}>Очистить поле</button>
         )
     }
 
     return (
-        <div className="wrapper">
+        <div className={style.wrapper}>
             {startNewGame()}
         <Board squares = {board} click={checkClick}/>
-            <p className='info'>
+            <p className={style.info}>
                 {winner ? 'Победитель ' + winner : "Сейчас ходит " + (xIsNext ? 'X' : 'O')}
             </p>
         </div>

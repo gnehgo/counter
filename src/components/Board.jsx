@@ -1,12 +1,13 @@
 import React from "react";
-import "./game.css"
 import Square from "./Square";
+import style from "./game.module.css"
+
 
 
 
 const Board =({squares,click}) => {
     return (
-        <div className="board">
+        <div className={style.board}>
             {
                 squares.map((square,i) =>(
                     <Square key={i} value={square} onClick={() =>click(i)}/>
