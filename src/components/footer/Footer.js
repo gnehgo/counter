@@ -7,8 +7,7 @@ import gitHub from './../../img/gitHub.svg';
 const Footer = () => {
     return (
         <footer className="footer">
-            <div className="container">
-                <div className="footer__wrapper">
+                <div className="footer_wrapper">
                     <div className="social">
                         <p className="social_item">
                             <a href='https://vk.com/gnehgo'>
@@ -35,7 +34,6 @@ const Footer = () => {
                         <p>© 2023 MyCV</p>
                     </div>
                 </div>
-            </div>
         </footer>
     );
 }

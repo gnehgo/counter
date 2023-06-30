@@ -12,15 +12,18 @@ function HomePage(){
                 <div className="container">
                     <h2 className="title-2">Frontend</h2>
                     <p className="content-list">
-                        JavaScript, TypeScript, ReactJS, Angular, Redux,
-                        HTML, CSS, NPM, BootStrap, MaterialUI, Yarn,
-                        TailwindCSS, StyledComponents
+                        JavaScript, ReactJS, Redux,
+                        HTML, CSS, BootStrap, StyledComponents
                     </p>
                     <h2 className="title-2">Backend</h2>
                     <p className="content-list">
-                        NodeJS, MySQL, MongoDB, PHP, Laravel
+                        NodeJS, MySQL, Python, Java
                     </p>
-
+                    <h2 className="title-2">Personal</h2>
+                    <p className="content-list">
+                        Responsibility, Quick learner, Creativity, Interest,
+                        Motivation,Stress resistance, Analytical mind
+                    </p>
                 </div>
             </main>
         </>
