@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import style from "./game.module.css"
 import Board from "./Board";
-import Winner from "../helperz/Winner";
+import Winner from "./Winner";
 
 
 
@@ -20,7 +20,8 @@ const Game = () => {
 
     const startNewGame = () =>{
         return(
-            <button className={style.start_btn} onClick={() => setBoard(Array(9).fill(null))}>Очистить поле</button>
+            <button className={style.start_btn} onClick={() =>
+                setBoard(Array(9).fill(null))}>Очистить поле</button>
         )
     }
 

@@ -13,3 +13,6 @@
     color: #b9b8b8;
     cursor: default;
 }
+.page{
+    min-height: 100vh;
+}

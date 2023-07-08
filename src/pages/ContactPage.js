@@ -2,7 +2,7 @@ import React from 'react';
 import "./pagesStyle/contact.css"
 let  ContactPage = () => {
     return (
-            <div>
+            <div className="page">
                 <h1 className="title-1">Contacts</h1>
                     <h2 className="title-2">Location</h2>
                     <p className="contactInfo">Moscow, Russia</p>
