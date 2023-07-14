@@ -25,9 +25,6 @@
     justify-content: center;
     align-items: center;
 }
-button:hover {
-
-}
 
 button:active {
     border-bottom: 2px solid transparent;

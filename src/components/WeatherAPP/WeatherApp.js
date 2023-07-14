@@ -53,7 +53,7 @@ class WeatherApp extends React.Component {
         return (
             <div className="wrapper">
                 <div className="main">
-                <div className="container">
+                <div className="block">
                     <div className="row">
                         <div className="col-sm-5">
                             <p className="info">Узнайте погоду в вашем городе</p>

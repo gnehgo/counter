@@ -1,5 +1,5 @@
 .page{
-    min-height: 65vh;
+    min-height: 68vh;
 }
 .title-1 {
     margin-bottom: 35px;
@@ -22,5 +22,6 @@
     margin-top: 20px;
 }
 .pageToDo{
-    min-height: 69vh;
+    min-height: 72vh;
+    background: #8758ff;
 }

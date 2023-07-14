@@ -7,11 +7,11 @@ import {Link} from "react-router-dom";
 function ProjectsPage(){
     return(
         <div className={styles.page}>
-            <div className={styles.body} >
+            <div>
                 <Card className={styles.cards} border={"dark"} style={{ width: '15rem',}}>
                     <Card.Img variant="top" src="tik-tak-toe.png"/>
                     <Card.Body>
-                        <Card.Title>tik tak toe game</Card.Title>
+                        <Card.Title>tic tac toe game</Card.Title>
                         <Card.Text>
                             Игра крестики нолики
                         </Card.Text>
