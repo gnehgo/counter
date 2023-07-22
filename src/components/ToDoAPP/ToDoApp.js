@@ -26,27 +26,27 @@ function ToDO() {
     return(
         <div className={style.page}>
             <div className={style.container}>
-            <h1 className={style.logo}>ToDoApp</h1>
-            <input value={input} className={style.ToDoInput}  placeholder="Write ToDo"
-                   onKeyUpCapture={(e)=>addTask(e)}
-                   onChange={(e)=>setInput(e.target.value)}/>
-            <div>
-                {tasks && tasks.map(task =>{
-                    return(
-                        <div className={style.taskWrapper} key={task.id}>
-                            <input type="checkbox" className={style.checkbox} onClick={()=>toDoCompleted(task.id)}/>
-                            <div className={style.taskTittle}
-                                 style={{textDecoration:task.completed ?'line-through':null}}
-                            >{task.tittle}
+                <h1 className={style.logo}>ToDoApp</h1>
+                <input value={input} className={style.ToDoInput}  placeholder="Write ToDo"
+                       onKeyUpCapture={(e)=>addTask(e)}
+                       onChange={(e)=>setInput(e.target.value)}/>
+                <div>
+                    {tasks && tasks.map(task =>{
+                        return(
+                            <div className={style.taskWrapper} key={task.id}>
+                                <input type="checkbox" className={style.checkbox} onClick={()=>toDoCompleted(task.id)}/>
+                                <div className={style.taskTittle}
+                                     style={{textDecoration:task.completed ?'line-through':null}}
+                                >{task.tittle}
+                                </div>
+                                <div
+                                    onClick={()=>removeTask(task.id)}
+                                    className={style.close}>&times;</div>
                             </div>
-                            <div
-                                onClick={()=>removeTask(task.id)}
-                                className={style.close}>&times;</div>
-                        </div>
-                    )
+                        )
 
-                })}
-            </div>
+                    })}
+                </div>
             </div>
         </div>
     )
