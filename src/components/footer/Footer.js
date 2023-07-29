@@ -25,7 +25,7 @@ const Footer = () => {
                             </a>
                         </p>
                         <p className="social_item">
-                            <a href='https://github.com/kirilloganyan'>
+                            <a href='https://github.com/fa'>
                                 <img src={gitHub} alt="Link" />
                             </a>
                         </p>
