@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {addTodo} from '../../store/todoSlice';
 import './ToDo.css'
-import TodoList from "../ToDoApp/TodoList";
-import InputField from "../ToDoApp/InputField";
+import TodoList from "./TodoList";
+import InputField from "./InputField";
 import {useDispatch} from "react-redux";
 const ToDoApp = () => {
     const [text,setText] = useState('')
