@@ -2,7 +2,8 @@ import React from 'react';
 import {Nav, Navbar} from "react-bootstrap";
 import {NavLink} from "react-router-dom";
 
- function Navibar(){
+
+function Navibar(){
         return(
         <Navbar  bg="black" variant="dark">
             <Navbar.Brand>Portfolio CV</Navbar.Brand>
