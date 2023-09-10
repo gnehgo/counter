@@ -1,5 +1,5 @@
 import React from 'react';
-import ToDoApp from "../components/ToDoAPP/ToDoApp";
+import ToDoApp from "../components/ToDo/ToDoApp";
 import "./pagesStyle/contact.css"
 
 

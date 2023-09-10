@@ -86,6 +86,6 @@ input:checked +span{
 }
 .pageToDo {
     background: #8758ff;
-    min-height: 100vh;
+    min-height: 72vh;
     padding: 50px;
 }
