@@ -41,12 +41,13 @@
     text-shadow:0 0 10px #8758ff;
     cursor: pointer;
     border: none;
-    margin-left: 15px;
+    font-family: 'Poppins', sans-serif;
+
 }
 .ToDoContainer{
     padding-top: 15px;
     border-radius: 5px;
-    width: 500px;
+    width: 550px;
     background: #1A1A40;
     height: 500px;
     margin-left: auto;
@@ -69,18 +70,17 @@
     padding: 0.5rem 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    width: 350px;
+    margin-right: 10px;
+    margin-left: 50px;
+    width: 400px;
     color: #8758ff;
-    margin-left: 25px;
     font-family: 'Poppins', sans-serif;
 }
 .checkbox{
     margin-left: 7px;
 
 }
-.ToDo{
-    min-height: 100vh;
-}
+
 input:checked +span{
     text-decoration: line-through;
 }
