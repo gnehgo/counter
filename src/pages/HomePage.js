@@ -11,7 +11,7 @@ function HomePage(){
                     <h2 className="title-2">Frontend</h2>
                     <p className="content-list">
                         JavaScript, ReactJS, Redux,
-                        HTML, CSS, BootStrap, StyledComponents
+                        HTML, CSS, BootStrap, Material UI, Consta
                     </p>
                     <h2 className="title-2">Backend</h2>
                     <p className="content-list">
