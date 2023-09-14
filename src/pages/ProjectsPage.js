@@ -2,15 +2,14 @@ import React from 'react';
 import {Button, Card} from "react-bootstrap";
 import styles from "./pagesStyle/projects.module.css"
 import {Link} from "react-router-dom";
-import {preojectState} from "../store/projectStore";
+import {projectState} from "../store/projectStore";
 
 
 function ProjectsPage(){
     return(
-        preojectState.map( project =>
-            <div className={styles.page}>
-                <div>
-                    <Card className={styles.cards} border={"dark"} style={{ width: '15rem',}}>
+        <div className={styles.page}>
+            {projectState.map(project =>
+            <Card className={styles.cards} border={"dark"} style={{ width: '15rem',}}>
                         <Card.Img variant="top" src={project.img}/>
                         <Card.Body>
                             <Card.Title>{project.title}</Card.Title>
@@ -23,10 +22,9 @@ function ProjectsPage(){
                                 </Link>
                             </Button>
                         </Card.Body>
-                    </Card>
-                </div>
-            </div>
-        )
-    )
+                    </Card>)
+            }
+        </div>
+            )
 }
 export default ProjectsPage;

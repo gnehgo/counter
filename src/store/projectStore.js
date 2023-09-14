@@ -1,6 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 
-export const preojectState = [{
+export const projectState = [{
     title: 'tic tac toe game',
     img:'tik-tak-toe.png',
     text: 'Игра крестики нолики',
@@ -25,6 +25,6 @@ export const preojectState = [{
 
 const projectStore = createSlice({
     name:'projects',
-    preojectState,
+    projectState,
     reducers:{}
 })
