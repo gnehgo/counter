@@ -7,7 +7,7 @@ import {useSelector} from "react-redux";
 const TodoList = () => {
     const todos = useSelector(state => state.todos.todos)
     return (
-        <ul>
+        <div>
             {
                 todos.map(todo =>
                         <TodoItem
@@ -17,7 +17,7 @@ const TodoList = () => {
                         )
 
             }
-        </ul>
+        </div>
     );
 };
 
