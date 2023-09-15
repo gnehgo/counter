@@ -16,7 +16,7 @@ const InputField = ({text, handleInput, handeSubmit}) => {
                 onKeyUp={handleKeyUp}
                 onChange={event => handleInput(event.target.value)}
             />
-            <button  className={'ToDoBtn'} onClick={handeSubmit}>+</button>
+            <button  className={'ToDoBtn'} onClick={handeSubmit}>Add</button>
         </div>
     );
 };
