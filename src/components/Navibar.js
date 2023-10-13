@@ -1,5 +1,6 @@
 import React from 'react';
-import {Nav, Navbar,NavLink} from "react-bootstrap";
+import {NavLink} from "react-router-dom";
+import {Nav, Navbar} from "react-bootstrap";
 
 
 function Navibar(){
