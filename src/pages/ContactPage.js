@@ -12,8 +12,8 @@ let  ContactPage = () => {
                         </p>
                         <h2 className="title-2">Email</h2>
                         <p className="contactInfo">
-                            <a className="contactInfo" href="mailto:gnehgoogheng@gmail.com">
-                                gnehgoogheng@gmail.com
+                            <a className="contactInfo" href="mailto:kirilloganyanwork@gmail.com">
+                                kirilloganyanwork@gmail.com
                             </a>
                         </p>
             </div>

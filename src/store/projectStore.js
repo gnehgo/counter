@@ -20,6 +20,9 @@ export const projectState = [{
         text: 'Игра крестики нолики',
         url:'/todo',
         btn_title: 'Сделать запись'
+    },
+    {
+        title: 'Posts App',
     }
 ]
 
