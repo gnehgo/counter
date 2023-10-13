@@ -1,4 +1,3 @@
-import {createSlice} from "@reduxjs/toolkit";
 
 export const projectState = [{
     title: 'tic tac toe game',
@@ -21,13 +20,6 @@ export const projectState = [{
         url:'/todo',
         btn_title: 'Сделать запись'
     },
-    {
-        title: 'Posts App',
-    }
+
 ]
 
-const projectStore = createSlice({
-    name:'projects',
-    projectState,
-    reducers:{}
-})
